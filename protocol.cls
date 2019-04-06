@@ -163,9 +163,8 @@
 
 \makeatletter
 \fancyhead[L]{\small \thetitle}
-\fancyhead[C]{\small \@mysubject}
 \fancyhead[R]{\small \@date}
-\fancyfoot[L]{\small \theauthor~{\ifccicons\footnotesize\ccby\fi}}
+\fancyfoot[L]{\small \theauthor}
 \fancyfoot[C]{\small \@mycourse}
 \fancyfoot[R]{\small \thepage~/~{\lastpageref*{VeryLastPage}}}
 \makeatother
@@ -191,12 +190,12 @@
 \renewcommand\@maketitle{
     \iflogos~\\	% Line fix
     	\begin{minipage}{3.2cm}
-	        \IfFileExists{images/logo-left.png}{
+	        \IfFileExists{images/logo-left1.png}{
 	            \includegraphics[width=3.2cm]{images/logo-left.png}}{}
     	\end{minipage}
     	\hfill
         \begin{minipage}{3.2cm}
-	    	\IfFileExists{images/logo-right.png}{
+	    	\IfFileExists{images/logo-right1.png}{
 	            \includegraphics[width=3.2cm]{images/logo-right.png}}{}
 	    \end{minipage}
     	\vfill\fi 	% Fill space between title header and project logo and headings
@@ -216,7 +215,6 @@
 \newcommand\maketable{
 	~\\
     \begin{minipage}[t]{0.3\textwidth}
-        Bewertung:\hfill\vspace{0.5em}\\
         Betreuer:\hfill\@myteacher
     \end{minipage}
     \hfill

@@ -1,24 +1,39 @@
 %!TEX root=../protocol.tex	% Optional
 
 \section{Einführung}
-Diese Protokollvorlage soll helfen den Laborübungsteil entsprechend dokumentieren zu können. Diese Vorlage ist in \LaTeX ~verfasst.
+Bei Multiplayer-Spielen handelt es sich häufig um Netzwerkspiele, bei denen die Spieler physisch voneinander getrennt sind und die Geräte (PCs, Konsolen oder Handhelds) über ein Netzwerk miteinander verbunden sind. Bei Definition muss ein Netzwerkspiel ein Netzwerk beinhalten bei der eine digitale Verbindung zwischen zwei oder mehr Geräten besteht.\cite{book:multiplayer1}
+\newline\noindent\newline
+Viele Multiplayer-Spiele, besonders die frühen, waren jedoch keine Netzwerkspiele. Normalerweise würden bei solchen Multiplayer-Spielen Benutzer abwechselnd auf dem selber Gerät spielen. Zum Beispiel, ein Spieler würde abwechselnd gegen Monster kämpfen, während der zweite Spieler zuschaut. Sobald der erste Spieler zerstört wurde oder das Level beendet hat, ist der zweite Spieler an der Reihe. Für jeden Spieler gab es einen eigenen Punktestand.\cite{book:multiplayer1}
+\newline\noindent\newline
+Beim lokale Multiplayer-Spiel, entweder kooperativ (Co-Op) oder Spieler gegen Spieler (PvP), würde jeder Spieler seinen Charakter auf dem gleichen Bildschirm sehen, oder der Bildschirm wird für jeden Spieler in separate Regionen aufgeteilt. Beispielsweise kann bei einem Multiplayer-Sportspiel jeder Spieler ein Team steuern. Das Spielfeld kann dabei entweder vollständig von beiden Spieler gesehen werden oder die Sicht des Spielfeldes wird auf den wesentlichen Teil bei denen die Spieler interagieren reduziert. So umfasst der Bereich der Multiplayer-Spiele einige Spiele, die keine Netzwerkspiele sind.\cite{book:multiplayer1}
+\newline\noindent\newline
+Auf der anderen Seite sind einige Netzwerkspiele keine Multiplayer-Spiele. Ein Spiel kann ein Netzwerk verwenden, um den Computer des Spielers mit einem Remote-Server zu verbinden, der verschiedene Aspekte des Spiels steuert. Das Spiel selbst kann jedoch ein Einzelspieler-Spiel sein, bei dem keine direkte Interaktion mit anderen Spielern oder deren Charakteren besteht. Insbesondere frühe Spiele waren vernetzt, da sich ein Spieler an einem Server anmeldete und das Spiel über ein Netzwerk aus der Ferne über ein Terminal spielte. Selbst bei modernen Computersystemen von heute können Spieler ein Spiel lokal auf einem PC ausführen und eine Verbindung zu einem Server herstellen, um neue Inhalte zu erhalten oder mit künstlichen Intelligenzeinheiten (AI) zu interagieren, die von einem Server gesteuert werden.\cite{book:multiplayer1}
+% \newline\noindent\newline
 
-\subsection{Ziele}
-Hier werden die zu erwerbenden Kompetenzen und deren Deskriptoren beschrieben. Diese werden von den unterweisenden Lehrkräften vorgestellt.
-
-Dies kann natürlich auch durch eine Aufzählung erfolgen:
-\begin{itemize}
-	\item Dokumentiere wichtige Funktionen
-	\item Gib eine Einführung zur Verwendung von \LaTeX
-\end{itemize}
-
-\subsection{Voraussetzungen}
-Welche Informationen sind notwendig um die Laborübung reibungslos durchführen zu können? Hier werden alle Anforderungen der Lehrkraft detailliert beschrieben und mit Quellen untermauert.
-
-\subsection{Aufgabenstellung}
-Hier wird dann die konkrete Aufgabenstellung der Laborübung definiert.
-
-\subsection{Bewertung}
-Hier wird die Bewertung für das Beispiel auf die jeweiligen Kompetenzen aufgeteilt. Diese soll zur leichteren Abnahme auch nicht entfernt werden.
-\\\\
-Nun kommt ein Seitenumbruch, um eine klare Trennung der Schülerarbeit zu bestimmen.
+\newpage
+\section{Vorproduktion von Multiplayer-Spielen}
+Die Vorproduktion beansprucht im Allgemeinen eine Zeit, die proportional zu der Zeit ist, die man für die Entwicklung eines Spiels aufwenden möchte. Im Allgemeinen dauert die Vorproduktion für ein 1-Jahres-Projekt 6-8 Wochen. (Diese Zahlen können je nach Projekt variieren)
+\newline\noindent\newline
+Die Vorproduktion läuft in Schritten ab und muss betrachtet werden, indem eine grundlegende Struktur für das Spiel festgelegt wird und sehr strenge Richtlinien für das gesamte Team (Design, Programmierung, Kunst  usw.) erstellt werden, die beim Übergang zu befolgen sind aus der Vorproduktion und in die eigentliche Produktion des Spiels.
+\newline\noindent\newline
+Der erste Schritt ist natürlich ein Kernkonzept für das Spiel festlegen. Dabei ist es wichtig die Frage zu stellen, soll es ein Multiplayer-Spiel werden und wenn ja welche Art von Multiplayer entstehen soll. Es wird hierbei unterschieden zwischen Einzelspieler die einen optionalen Multiplayer Modus anbieten, Co-Op-Spiele bei denen das Spiel von zwei oder mehr Spieler gegen Computergesteuerten Gegner gespielt wird oder ein Multiplayer-Spiel bei denen Spieler mit anderen Spielern interagieren. 
+\newline\noindent\newline
+Nachdem man ein Kernkonzept erstellt hat, sind die nächsten Fragen zu beantworten.
+\subsubsection*{Für wen ist unser Spiel?}
+Es ist wichtig zu wissen wer das Spiel spielen wird, weil man viel darüber erfährt, wie man das Spiel vermarktet, außerdem können auch die Designern die Spielemechanik und das Gameplay an ihre Zielgruppe anpassen. Ein Spiel, das für kleine Kinder entwickelt wurde, sollte nicht wie ein Spiel für 13- bis 25-Jährige oder ein Spiel für 30-50-Jährige entworfen werden. Spiele für Kleinkinder werden in der Regel mit einfacheren Puzzles, geringeren Strafen fürs verlieren, sind Zeichentrick-Artig und verwenden hellere Farbpaletten, entworfen.
+\newline\noindent\newline
+Ein Spiel für die \grqq Gaming\grqq-Generation wird einen viel größeren Umfang haben, aber es ist sehr wichtig, diese Informationen in das Spieledesign zu integrieren. Dies ist besonders wichtig, wenn man eine Fortsetzung eines älteren Spiels macht, bei der man auch berücksichtigen müssen, welche Personen Ihr erstes Spiel gespielt haben und welche Erwartungen Sie damit haben.
+\subsubsection*{Was ist unsere zentrale Spielmechanik?}
+Die zentrale Spielmechanik ist, worauf man alles setzt. Sie ist der wichtigste Punkt für den Erfolg des Spieles. Es ist eine einfache Aussage, sie ist nicht komplex. Zum Beispiel war Minecraft im Kern \grqq Platziere Blöcke verschiedener Art in einer Block-basierten Welt\grqq. Es ist die Aufgabe des Spielers, darüber hinausgehende Erfahrungen zu schaffen. Die zentrale Spielmechanik darf bei der Produktion nicht verändert werden dies könnte das Projekt erfolglos machen.
+\subsubsection*{Was ist unser Zeitplan?}
+Es muss für die Produktion ein Zeitplan in der Vorproduktion vordefiniert werden, denn Zeit ist Geld und falls das Budget für 2 Jahre reicht, sollte das Projekt für 1.5 Jahre geplant werden, damit man einen Puffer hat.
+\subsubsection*{Was sind die Säulen unseres Spiels?}
+Beim Designen von Spielen sollte man 3-5 Säulen definieren. Diese Säulen sind Hauptelemente/Emotionen, die das Spiel erforscht und den Spielern Gefühle vermitteln. Sie sollten einfach und kurz definiert werden, nicht mehr als 2 Sätze. Beispiele für solche Säulen, \textit{starke Charakteranpassung}, \textit{fairer Wettkampf} oder \textit{Zufällig generierte Levels}. Bei Entscheidungen sollten diese Säulen als Entscheidungshilfen verwendet werden, falls eine Entscheidung eine dieser Säulen verletzt sollte sie nicht umgesetzt werden. Dies sind Richtlinien, die das gesamte Team vorantreiben und dabei jedes System, jedes Level und jede Erfahrung bestimmen. Sie bieten sowohl Einschränkungen als auch Freiheit und sollten einer der ersten Dinge sein, die man festlegt
+\subsubsection*{Was ist unser Budget?}
+Dabei ist es wichtig zu Messen wie viel Geld benötigt wird für die Erstellung des Spieles. Es ist wichtig abzuschätzen wie hoch der Aufwand ist und die dabei entstehenden Kosten. Es sollte unbekannte Faktoren miteinkalkuliert werden, für etwaige Bugs, Ausfall von Personal oder sonstige Fälle.
+\subsubsection*{Welche Netzwerkstruktur?}
+Bei einem Multiplayer-Spiel ist es zu entscheiden zwischen einem dedizierten Server oder einer Peer-to-Peer Verbindung. Ein dedizierter Server übernimmt die Kommunikation zwischen den Endgeräten
+\subsubsection*{Prototypen}
+Die Erstellung des Prototypen sind wichtige Wochen, in der Designer, Programmierer, Künstler und Level-Designer alle ihre Fähigkeiten einsetzen und einen einfachen Prototypen erstellen mit den gewünschten Spielmechaniken und Gameplay-Features.
+\\
+Bevor jedoch Prototypen entstehen, müss das Team erst rechtfertigen, was sie wollen. Beim erstellen eines First-Person-Shooter wie Call of Duty, macht das Prototyping eines magischen Drachen Reittier keinen Sinn. Falls man bereits weiß, was die Systeme sein sollen, sollten die Produzenten die Designer zuweisen, diese mit Programmierern und Künstlern und Level-Designern koppeln und Prototypen erstellen lassen. Diese Prototypen sind dazu da, iteriert zu werden, um herauszufinden was funktioniert, zu finden was nicht funktioniert, und zu verfeinern was funktioniert, bis es gt genug ist.
